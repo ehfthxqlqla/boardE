@@ -1,0 +1,132 @@
+:root {
+    --board-color: #88ABFF;
+}
+
+* {
+    font-family: 'sans serif';
+}
+
+#title-h1 {
+    position: absolute;
+    top: 5%;
+}
+
+input.post-write-input {
+    box-sizing: border-box;
+    padding-left: 5px;
+    border: 1px solid black;
+    height: 25px;
+    outline: none;
+}
+
+textarea {
+    scrollbar-width: 10px;
+    resize: none;
+    font-size: 11pt;
+    display: block;
+}
+
+/* textarea::-webkit-scrollbar {
+    display: none;
+} */
+
+#PostWrite {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: transparent;
+}
+
+#write-area {
+    overflow-y: auto;
+    overflow-x: hidden;
+    box-sizing: border-box;
+    border-radius: 10px;
+    border: 2px solid #ccc;
+    width: 950px;
+    height: 600px;
+}
+
+.post-nickname {
+    margin-top: 15px;
+    margin-left: 15px;
+}
+
+.post-password {
+    margin-left: 5px;
+}
+
+.input-icon-relative {
+    position: relative;
+}
+
+.pwShowToggle {
+    box-sizing: border-box;
+    border-radius: 100%;
+    transition: .5s;
+    cursor: pointer;
+    position: absolute;
+    top: 4px;
+    left: 140px;
+    font-size: 15px;
+}
+
+.pwShowToggle:hover{
+    transition: .5s;
+    color: #88ABFF;
+}
+
+.pwShowToggle.show {
+    display: none;
+}
+
+.post-title {
+    display: block;
+    margin-left: 15px;
+    margin-top: 10px;
+    width: 500px;
+}
+
+.post-content {
+    border-radius: 0px;
+    outline: none;
+    margin-left: 15px;
+    margin-top: 30px;
+    padding-left: 5px;
+    padding-top: 5px;
+    min-height: 100px;
+    width: 900px;
+}
+
+.cancel-write {
+    cursor: pointer;
+    width: 80px;
+    height: 35px;
+    border: none;
+    outline: none;
+    border: 1px solid #444;
+    background-color: #666;
+    color: white;
+}
+
+.post-to-board {
+    position: relative;
+    cursor: pointer;
+    width: 80px;
+    height: 35px;
+    border: 1px solid #29367c;
+    background-color: #3b4890;
+    color: white;
+    outline: none;
+    margin-left: 5px;
+}
+
+.buttons-post {
+    position: relative;
+    top: 30px;
+    left: 750px;
+    bottom: 30px;
+}
+
+/* 닉네임 (127.0) */

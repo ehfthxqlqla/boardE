@@ -1,0 +1,309 @@
+#Notfoundview {
+    border-bottom: 1px solid black;
+}
+
+#Notfoundview h2 {
+    margin-left: 30px;
+}
+
+#howtosolve {
+    margin-top: 10px;
+    margin-left: 30px;
+}
+
+a.notfoundanchor {
+    text-decoration: none;
+    font-weight: bolder;
+    color: rgb(88, 194, 141);
+}
+
+a.notfoundanchor:not(:last-child)::after {
+    color: #ccc;
+    content: "|";
+    font-weight: 100;
+    margin-left: 10px;
+}
+
+a.notfoundanchor:not(:first-child) {
+    margin-left: 10px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+h2.error-h2 {
+    position: absolute;
+    top: -20%;
+    font-size: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* -------------- 위는 404 Not Found 페이지고, 이제는 게시물 보여주는 곳 -------------- */
+
+body.contentCenter {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow-y: scroll;
+}
+
+#PostView {
+    position: relative;
+    border: 1px solid #000;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border-radius: 10px;
+    width: 1200px;
+    min-height: 600px;
+}
+
+.title {
+    display: block;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+.title span {
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.author {
+    width: 1180px;
+    margin-left: 10px;
+    border-bottom: 1px solid #000;
+    padding-bottom: 10px;
+}
+
+.author .fa-crown::after {
+    color: #ccc;
+    content: "|";
+    font-weight: 100;
+    margin-left: 10px;
+}
+
+.author .fa-user-tie::after {
+    color: #ccc;
+    content: "|";
+    font-weight: 100;
+    margin-left: 10px;
+}
+
+.author #date {
+    margin-left: 10px;
+}
+
+.author #date::after {
+    color: #ccc;
+    content: "|";
+    font-weight: 100;
+    margin-left: 10px;
+}
+
+.author #view {
+    margin-left: 10px;
+}
+
+.author #delete {
+    position: absolute;
+    right: 50px;
+}
+
+.author #delete::after {
+    color: #ccc;
+    content: "|";
+    font-weight: 100;
+    margin-left: 10px;
+}
+
+.author #edit {
+    position: absolute;
+    right: 10px;
+    margin-left: 10px;
+}
+
+.author #delete, .author #edit {
+    cursor: pointer;
+    text-decoration: none;
+    color: #000;
+}
+
+.author #delete:hover, .author #edit:hover {
+    text-decoration: underline;
+}
+
+.content {
+    margin-left: 10px;
+}
+
+.content pre {
+    white-space: pre-line;
+    margin-top: 10px;
+}
+
+.content pre a {
+    text-decoration: none;
+    color: #000;
+}
+
+.content pre a:hover {
+    text-decoration: underline;
+}
+
+.menu .fa-solid {
+    position: absolute;
+}
+
+.menu .fa-share-nodes {
+    margin-left: 1170px;
+    bottom: 5px;
+    cursor: pointer;
+    font-size: 23px;
+}
+
+/* .menu .fa-arrow-up {
+    bottom: 7px;
+    left: 45px;
+}
+
+.menu #like {
+    position: absolute;
+    cursor: pointer;
+    bottom: 5px;
+    left: 10px;
+} */
+
+/* ---------- 댓글작업 ---------- */
+
+.comments {
+    position: absolute;
+    top: 105%;
+    /* background-color: hotpink; */
+}
+
+.comments .commentWrite {
+    position: absolute;
+    top: 40px;
+}
+
+.comments .comment-password {
+    margin-left: 10px;
+}
+
+.comment-author, .comment-password {
+    width: 150px;
+}
+
+.comments .write-comment {
+    margin-top: 10px;
+    border: 1px solid #000;
+    padding-left: 5px;
+    padding-top: 5px;
+    outline: none;
+    width: 1200px;
+    min-height: 100px;
+}
+
+.comments .write-comment::-webkit-scrollbar {
+    display: none;
+}
+
+.comments .writeTextArea {
+    position: relative;
+}
+
+.comments .submit-comment {
+    position: absolute;
+    cursor: pointer;
+    border: 1px solid #5c5c5c;
+    color: #fff;
+    outline: none;
+    background-color: #3b4890;
+    width: 50px;
+    height: 90px;
+    top: 50%;
+    left: 95%;
+    transform: translateY(-50%);
+}
+
+.comments #CommentList {
+    display: block;
+    margin-top: 180px;
+    width: 1200px;
+}
+
+.comments .commentBox {
+    overflow-y: auto;
+    overflow-x: hidden;
+    max-height: 700px;
+}
+
+.comments .commentBox::-webkit-scrollbar {
+    width: 6px;
+}
+
+.comments .commentBox::-webkit-scrollbar-thumb {
+    border-radius: 3px;
+    background-color: gray;
+}
+
+.comments .commentBox::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.comments .commentBox::-webkit-scrollbar-button {
+    width: 0;
+    height: 0;
+}
+
+.comments .commentBox::after {
+    content: "";
+    width: 1200px;
+    display: block;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-bottom: 1px solid #ccc;
+}
+
+.comments .commentAuthor {
+    color: rgb(100, 100, 100);
+}
+
+.comments .commentAuthor::after {
+    content: "|";
+    color: #000;
+    font-weight: 100;
+    margin-left: 10px;
+}
+
+.comments :where(.commentDate, .commentAuthor::after) {
+    font-family: 'Gothic A1', 'sans-serif';
+    color: rgb(100, 100, 100);
+}
+
+.comments .commentContent {
+    white-space: pre-line;
+    margin-top: 5px;
+}
+
+.comments .commentContent a {
+    text-decoration: none;
+    color: #000;
+}
+
+.comments .commentContent a:hover {
+    text-decoration: underline;
+}
+
+.comments .commentDate {
+    margin-left: 10px;
+}
+
+#CommentList:last-child {
+    margin-bottom: 50px;
+}

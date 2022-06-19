@@ -1,0 +1,149 @@
+:root {
+    --board-color: #88ABFF;
+}
+
+#title-h1 {
+    position: absolute;
+    top: 5%;
+}
+
+input.post-edit-input {
+    box-sizing: border-box;
+    padding-left: 5px;
+    border: 1px solid black;
+    height: 25px;
+    outline: none;
+}
+
+textarea {
+    scrollbar-width: 10px;
+    resize: none;
+    font-size: 11pt;
+    display: block;
+}
+
+/* textarea::-webkit-scrollbar {
+    display: none;
+} */
+
+#PostEdit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: transparent;
+}
+
+.check-pw-bg {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.check-pw {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 260px;
+    height: 130px;
+    background-color: #ffffff;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.check-pw input {
+    width: 170px;
+}
+
+.check-pw button {
+    color: #ffffff;
+    cursor: pointer;
+    outline: none;
+    width: 80px;
+    height: 30px;
+    margin-top: 10px;
+}
+
+.check-pw h2 {
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.check-pw .pw-cancel {
+    background-color: #666;
+    border: 1px solid #444;
+}
+
+.check-pw .pw-confirm {
+    border: 1px solid #5c5c5c;
+    background-color: #3b4890;
+    margin-left: 10px;
+}
+
+#edit-area {
+    overflow-y: scroll;
+    overflow-x: hidden;
+    box-sizing: border-box;
+    border-radius: 10px;
+    border: 2px solid #ccc;
+    width: 950px;
+    height: 600px;
+}
+
+.edit-title {
+    display: block;
+    margin-left: 15px;
+    margin-top: 10px;
+    width: 500px;
+}
+
+.edit-content {
+    border-radius: 0px;
+    outline: none;
+    margin-left: 15px;
+    margin-top: 20px;
+    padding-left: 5px;
+    padding-top: 5px;
+    min-height: 100px;
+    width: 900px;
+}
+
+.cancel-write.inactive, .post-to-board.inactive {
+    opacity: 0.6;
+    color: #b2b2b2;
+    cursor: default;
+}
+
+.cancel-write {
+    cursor: pointer;
+    width: 80px;
+    height: 35px;
+    border: none;
+    outline: none;
+    border: 1px solid #444;
+    background-color: #666;
+    color: white;
+}
+
+.post-to-board {
+    cursor: pointer;
+    width: 80px;
+    height: 35px;
+    border: 1px solid #29367c;
+    background-color: #3b4890;
+    color: white;
+    outline: none;
+    margin-left: 5px;
+}
+
+.buttons-post {
+    position: relative;
+    top: 30px;
+    left: 750px;
+    bottom: 30px;
+}
+
+/* 닉네임 (127.0) */

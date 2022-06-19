@@ -1,0 +1,31 @@
+#PagiNation {
+    position: absolute;
+    bottom: 80px;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.pagenumber {
+    user-select: none;
+    transition: .2s;
+    display: inline-block;
+    box-sizing: border-box;
+    border: 1px solid black;
+    background-color: white;
+    text-align: center;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+}
+
+.pagenumber:hover {
+    user-select: none;
+    transition: .2s;
+    display: inline-block;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    text-align: center;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+}

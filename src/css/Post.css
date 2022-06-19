@@ -1,0 +1,220 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+.postId {
+    display: none !important;
+    text-align: center;
+    width: 60px;
+    float: left;
+    background-color: #ccc;
+    font-family: 'Roboto Mono';
+}
+
+.postArea:not(.postArea.postTitle) {
+    cursor: auto !important;
+}
+
+.postTitle {
+    position: relative;
+    z-index: -1;
+    transition: .5s;
+    cursor: pointer;
+    text-align: left;
+    padding-left: 10px;
+    float: left;
+    font-family: 'Gothic A1', sans-serif;
+    background-color: chartreuse;
+    width: 335px;
+}
+
+.postTitle:hover {
+    transition: 0.5s;
+    text-decoration: underline;
+}
+
+.postContent {
+    float: left;
+    font-family: 'Gothic A1', sans-serif;
+    background-color: antiquewhite;
+}
+
+.postIsAdmin {
+    display: block;
+    float: left;
+    width: 60px;
+    text-align: center;
+    font-family: 'Gothic A1', sans-serif;
+    background-color: aqua;
+}
+
+.postDate {
+    float: left;
+    width: 110px;
+    text-align: center;
+    font-family: 'Gothic A1', sans-serif;
+    background-color: cadetblue;
+}
+
+#PostList .Post .postAuthor {
+    display: inline;
+    float: left;
+    min-width: 220px;
+    text-align: center;
+    height: 20px;
+    font-size: 14px;
+    font-family: 'Gothic A1', sans-serif;
+    background-color: yellowgreen;
+}
+
+.postViews {
+    float: left;
+    font-family: 'Roboto Mono';
+    width: 75px;
+    height: 21px;
+    text-align: center;
+    background-color: rgb(201, 255, 255);
+}
+
+.postArea {
+    box-sizing: border-box;
+    /* border-bottom: 1px solid black; */
+    display: block;
+}
+
+.postId, .postViews {
+    font-weight: 375;
+}
+
+.contextMenu {
+    left: 85px;
+    border-radius: 5px;
+    border: 1px solid #a6a6a6;
+    transition: .5s;
+    width: 150px;
+    height: 100px;
+    position: absolute;
+    background-color: #ffffff;
+}
+
+.contextMenu:hover {
+    transition: 10s;
+    opacity: 0.8;
+}
+
+.contextMenu ul {
+    position: relative;
+    list-style-type: none;
+}
+
+.contextMenu ul li {
+    left: 10px;
+    font-size: 16px;
+    position: absolute;
+}
+
+.contextMenu ul li:first-child {
+    top: -10px;
+}
+
+.contextMenu ul li:nth-child(2) {
+    top: 20px;
+}
+
+.contextMenu ul li:nth-child(3) {
+    top: 50px;
+}
+
+.contextMenu ul li i {
+    min-width: 20px;
+    min-height: 15px;
+}
+
+.contextMenu ul > li > i, .contextMenu ul > li span {
+    cursor: pointer;
+}
+
+.contextMenu ul li span:not(.hotkey):hover {
+    text-decoration: underline;
+}
+
+.contextMenu ul li span {
+    padding-left: -30px;
+}
+
+.contextMenu ul li .hotkey {
+    text-align: right;
+}
+
+.hotkey {
+    padding-left: 17px;
+    font-size: 12px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.popup-background {
+    z-index: 100;
+    display: none;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.enter-password {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 260px;
+    height: 130px;
+    text-align: center;
+    background-color: white;
+    border: 1px solid #000000;
+    border-radius: 5px;
+}
+
+.enter-password h2 {
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.enter-password button {
+    color: #ffffff;
+    cursor: pointer;
+    outline: none;
+    width: 80px;
+    height: 30px;
+    margin-top: 10px;
+}
+
+.enter-password .password-input {
+    outline: none;
+    border: 1px solid black;
+    box-sizing: border-box;
+    text-align: left;
+}
+
+.cancel-del {
+    background-color: #666;
+    border: 1px solid #444;
+}
+
+.del-postboard {
+    border: 1px solid #5c5c5c;
+    background-color: #3b4890;
+    margin-left: 10px;
+}
+
+/**
+ * postlist가 600px이니까
+ * 700 - 60 = 640
+ * 
+*/

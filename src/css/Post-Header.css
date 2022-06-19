@@ -1,0 +1,75 @@
+* {
+    box-sizing: border-box;
+}
+
+.headerId {
+    display: none !important;
+    text-align: center;
+    width: 60px;
+    float: left;
+    background-color: #ccc;
+    font-family: 'Roboto Mono';
+    border-bottom: #000;
+}
+
+.headerTitle {
+    text-align: left;
+    padding-left: 10px;
+    float: left;
+    font-family: 'Gothic A1', sans-serif;
+    background-color: chartreuse;
+    width: 335px;
+}
+
+.headerContent {
+    float: left;
+    font-family: 'Gothic A1', sans-serif;
+    background-color: antiquewhite;
+}
+
+.headerIsAdmin {
+    display: block;
+    float: left;
+    width: 60px;
+    text-align: center;
+    font-family: 'Gothic A1', sans-serif;
+    background-color: aqua;
+}
+
+.headerDate {
+    float: left;
+    width: 110px;
+    text-align: center;
+    font-family: 'Gothic A1', sans-serif;
+    background-color: cadetblue;
+}
+
+.headerAuthor {
+    display: inline;
+    float: left;
+    min-width: 220px;
+    text-align: center;
+    height: 20px;
+    font-size: 16px;
+    font-family: 'Gothic A1', sans-serif;
+    background-color: yellowgreen;
+}
+
+.headerViews {
+    float: left;
+    font-family: 'Roboto Mono';
+    width: 75px;
+    height: 20px;
+    text-align: center;
+    background-color: rgb(201, 255, 255);
+    border-bottom: #000;
+}
+
+.headerArea {
+    box-sizing: border-box;
+    cursor: auto;
+    /* border-bottom: 1px solid black; */
+    display: block;
+    background-color: rgb(201, 255, 255) !important;
+    border-right: 1px solid #000 !important;
+}
